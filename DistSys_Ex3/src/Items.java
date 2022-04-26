@@ -3,6 +3,10 @@ public class Items {
 	private String name;
 	private double price;
 	private int qty;
+	
+	//public Items (String name, double price, int qty) {
+		
+   // }
 			
 	public void setName(String name) {
 		this.name = name;
