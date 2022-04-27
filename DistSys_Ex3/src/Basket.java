@@ -7,7 +7,7 @@ public class Basket {
 	private String name;
 	private Items item;
 	
-	 List<Items> items = new ArrayList<Items>();
+	 ArrayList<Items> items = new ArrayList<Items>();
 	  
 	  public Items searchItems(String name) {
 	        Iterator<Items> it = items.iterator();
@@ -22,11 +22,11 @@ public class Basket {
 	        }
 	
 	  public void addItem(String name, double price, int qty) {
-		    Items t = new Items();
+		    Items t = new Items(name, price, qty);
 		    items.add(t);
 	  }
 	  
-	  public List<Items> getItems() {
+	  public ArrayList<Items> getItems() {
 	        return items;
 	  		  }
 }

@@ -12,9 +12,10 @@ public class main {
 	     basket.addItem("Eier", 1, 500);
 	     basket.addItem("Stuhl", 30, 900);
 	     
-	        
-	        System.out.println(basket.items.toString());
 	        System.out.println(basket.searchItems("Hemd"));
+	        basket.searchItems("Laptop").setPrice(699);
+	        
+	        //System.out.println(basket.getItems("Laptop"));
   
 	}
 	
